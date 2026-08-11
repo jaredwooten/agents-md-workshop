@@ -8,7 +8,12 @@ from pathlib import Path
 
 from app.orders_v2.models import Order
 
-TYPE_NAMES = {int: "int", str: "str", bool: "bool", float: "float"}
+TYPE_NAMES: dict[object, str] = {
+    int: "int",
+    str: "str",
+    bool: "bool",
+    float: "float",
+}
 
 OUT_PATH = Path(__file__).resolve().parent.parent / "app" / "_generated_schema.py"
 

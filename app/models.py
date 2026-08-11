@@ -3,8 +3,8 @@
 # app/reporting/summary.py can compute historical totals from old data.
 # Current work belongs in app/orders_v2/ — do not modify this file.
 
-from dataclasses import dataclass, field
 import itertools
+from dataclasses import dataclass, field
 
 _id_counter = itertools.count(1)
 

@@ -1,3 +1,6 @@
+[tool.hatch.build.targets.wheel]
+packages = ["app"]
+
 [project]
 name = "orders-service"
 version = "0.2.0"
@@ -7,8 +10,8 @@ dependencies = []
 [project.scripts]
 orders = "app.cli:main"
 
-[tool.uv]
-dev-dependencies = ["pytest>=8.0", "ruff>=0.5"]
+[dependency-groups]
+dev = ["pytest>=8.0", "ruff>=0.5"]
 
 [build-system]
 requires = ["hatchling"]

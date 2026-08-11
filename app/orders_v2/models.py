@@ -1,8 +1,8 @@
 # ACTIVE order model. This is the one you want if you're adding an order field.
 # See app/_generated_schema.py, which is generated from this file — never hand-edit it.
 
-from dataclasses import dataclass, field
 import itertools
+from dataclasses import dataclass, field
 
 _id_counter = itertools.count(1)
 
