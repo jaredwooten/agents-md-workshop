@@ -14,13 +14,10 @@ uv run orders add "write AGENTS.md"
 uv run orders list
 ```
 
-If you don't have `uv`, see `docs/CONTRIBUTING.md`.
-
 ## What is this repo for?
 
-You'll complete `EXERCISE_TASK.md` twice — once with your agent operating
+You'll complete a series of code changes twice — once with your agent operating
 "cold" (no AGENTS.md), once after you've written repo context for it — from
 identical starting states, in two separate fresh agent sessions. After each
-round, run the prompt in `SELF_REPORT_PROMPT.md` and log the numbers on the
-whiteboard. Don't read `docs/CONTRIBUTING.md` too carefully before round one —
-half the point is watching how much searching the agent has to do without it.
+round, ask the agent to report its metrics and log the numbers on the
+whiteboard.
